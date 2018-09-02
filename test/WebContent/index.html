@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Test</h1>
-	�̷��� pull �Ǵ°ǰ�??
+	<form method = "post" name = "loginForm" action = "/test/loginServlet"> 
+		<table border = "1" cellspacing = "0">
+			<tr>
+				<td>아이디</td><td><input type = "text" name = "name"></td>
+			</tr>
+			
+			<tr>
+				<td>비밀번호</td><td><input type = "password" name = "password"></td>
+			</tr>
+			
+			<tr>
+				<td colspan = "2" align = "center"><input type = "button" value = "로그인" onclick = "checkLogin()">
+				<input type = "reset" value = "취소"></td>
+			</tr>
+		</table>
+	</form>
 </body>
 </html>
